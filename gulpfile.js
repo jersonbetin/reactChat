@@ -21,8 +21,8 @@ gulp.task('server', function(){
 
 gulp.task('build', function () {
      browserify({
-        entries : './src/components/index.jsx',
-        extensions : ['.jsx'],
+        entries : './src/components/index.js',
+        extensions : ['.js'],
         debug : true
      })
      .transform(babelify, {presets: ['es2015', 'react']})
@@ -55,9 +55,8 @@ gulp.task('wiredep', function(){
 });
 
 gulp.task('watch', ['build'], function () {
-    gulp.watch('src/components/**/*.jsx', ['build']);
-    gulp.watch([path.STYLE], ['inject']);
-    gulp.watch([path.JS], ['inject']);
+    gulp.watch('src/components/**/*.js', ['build']);
+    gulp.watch([path.STYLE, path.JS], ['inject']);
     gulp.watch(['./bower.js'], ['wiredep']);
 });
 

@@ -15,15 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.6"
-  },
-  "overrides":{
-    "bootstrap" : {
-         "main": [
-            "less/bootstrap.less",
-            "dist/css/bootstrap.css",
-            "dist/js/bootstrap.js"
-          ]
-    }
+    "Materialize": "materialize#^0.97.6"
   }
 }

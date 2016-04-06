@@ -1,0 +1,37 @@
+/*
+*margin defaul
+*/
+.mg-t-lg{
+   margin-top: 20px;
+}
+.mg-t-m{
+   margin-top: 15px !important;
+}
+.mg-t-sm{
+   margin-top: 10px !important;
+}
+.mg-t-xs{
+   margin-top: 5px !important;
+}
+.mg-b-lg{
+   margin-botton: 40px !important;
+}
+.mg-b-m{
+   margin-botton: 15px !important;
+}
+.mg-b-sm{
+   margin-botton: 10px !important;
+}
+.mg-b-xs{
+   margin-botton: 5px !important;
+}
+
+.user-logo{
+   width:25%;
+   font-size: 25px !important;
+}
+
+.user-logo .info span{
+   margin: auto;
+}
+
