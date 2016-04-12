@@ -1,3 +1,4 @@
 {
-"directory": "dist/libs"
+    "directory": "dist/libs",
+    "json": "bower.json"
 }
