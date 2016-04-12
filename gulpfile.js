@@ -21,7 +21,7 @@ gulp.task('server', function(){
 
 gulp.task('build', function () {
      browserify({
-        entries : './src/components/index.js',
+        entries : './src/components/app.js',
         extensions : ['.js'],
         debug : true
      })
@@ -33,7 +33,7 @@ gulp.task('build', function () {
 
 var path = {
     JS: './dist/js/**/*js',
-    STYLE: './dist/stelesheeps/**/*.js',
+    STYLE: './dist/stylesheets/**/*.css',
     BOWER :'./dist/libs'
 };
 

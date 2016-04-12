@@ -1,5 +1,5 @@
 import React from 'react';
-import ComponentLogin from './login';
+import ComponentLogin from '../login';
 
 export default class ComponentSectionHome extends React.Component{
    render(){
@@ -7,8 +7,8 @@ export default class ComponentSectionHome extends React.Component{
       <div className="row">
         <div className="col s12 m4">
           <div className="icon-block">
-            <h4 className="center brown-text"><i className="material-icons">Login</i></h4>
-            <ComponentLogin />            
+            <h4 className="center brown-text">Login</h4>
+            <ComponentLogin />
           </div>
         </div>
 
