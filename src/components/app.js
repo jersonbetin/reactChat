@@ -12,12 +12,19 @@ import ComponentRegister  from './pages/register';
 
 class App extends React.Component {
    render(){
+      let parallax = <ComponentParallax />;
+      if(this.props.routes[this.props.routes.length-1].path || false){
+        parallax = null;
+      }
       return (<div>
         <ComponentHeader />
-        <ComponentParallax />
+        {/*Include parallax*/}
+        {parallax}
+
         <div className="container">
           {/* this is the important part */}
           {this.props.children}
+          {console.log(this.props.routes[this.props.routes.length-1])}
         </div>
         <ComponentFooter />
       </div>);
@@ -25,13 +32,15 @@ class App extends React.Component {
 }
 
 let routes = (
-  <Route path="/" component={App}>
-    <IndexRoute component={ComponentHome} />
-    <Route path="register" component={ComponentRegister} />
-    <Route path="about" component={ComponentAbout} />
-    <Route path="contact" component={ComponentContact} />
-  </Route>
+  <Router  history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={ComponentHome} />
+      <Route path="register" component={ComponentRegister} />
+      <Route path="about" component={ComponentAbout} />
+      <Route path="contact" component={ComponentContact} />
+    </Route>
+  </Router>
 );
 
-ReactDOM.render(<Router  history={browserHistory}>{routes}</Router>, document.getElementById('containerAll'));
+ReactDOM.render(routes, document.getElementById('containerAll'));
 
