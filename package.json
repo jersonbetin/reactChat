@@ -4,7 +4,7 @@
   "description": "reactjs structure",
   "main": "index.js",
   "scripts": {
-    "start":"gulp"
+    "start":"gulp dev"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/jersonbetin/react_structure/issues"
   },
-  "homepage": "https://github.com/jersonbetin/react_structure#readme",  
+  "homepage": "https://github.com/jersonbetin/react_structure#readme",
   "dependencies": {
     "react": "^0.14.8"
   },
